@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="FR_fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DotBall Of Freedom</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script src="libraries/p5.min.js"></script>
+  <script src="sketch.js"></script>
+  <!--script src="libraries/p5.sound.min.js"></script-->
+</head>
+
+  <body>
+    <div id="desc">
+      <ul>
+        /|\ Ukrainian Freedom Flag DotBall /|\
+        <ul>
+          <li>Une simple sphere composée d'anneaux</li>  
+        </ul>
+        Cheat & Tricks :
+        <ul>
+          <li>Les points sont des 'Circle()' vidés [ diametre de 1px ] - On affiche que leurs contours[ 'StrokeWeight 2px' ] pour simuler un 'pseudo-point'.</li>
+          <li>Avantage : <br/>Avec une shape 'primitive' comme Circle() pour faire des pseudo-points dans un Sketch WebGL, l'effet de profondeur est automatique
+            [ taille des 'pseudo-points' et couleurs estompées ] en arrière-plan.
+          </li>  
+          <li>A la modélisation, les anneaux sont tous sur le meme plan 'z'. Une rotation/un offest de 9° sur l'axe Y est faite sur chaque anneau dans la fonction 'Draw()' 
+            pour dessiner une sphere...avec des anneaux !</li>
+        </ul>
+        Hit the Space Bar to switch Circle() & Point() rendering.
+      </ul>
+    </div>
+  </body>
+</html>
