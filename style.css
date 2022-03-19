@@ -1,7 +1,7 @@
 @font-face { font-family: 'Press Start 2P'; src: url('PressStart2P.ttf'); }
 * { user-select: none;  box-sizing: border-box; }
-ul{line-height: 2.5em; color: #FED500; margin: 0.5em;}
-li { line-height: 1.5em; color: #015BBB;margin-bottom:0.5em; text-align: justify;}
+ul{line-height: 2.5em; color: #015BBB; margin: 0.5em;}
+li { line-height: 1.5em; color: #FED500; margin-bottom:0.5em; text-align: justify;}
 html, body
 {
   background-color: #222;
