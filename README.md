@@ -3,9 +3,9 @@ p5js => Rotative DotBall...of Freedom !
 
 + Dealing with a Dotted Ukrainian 'DotBall' of Freedom.
 + 720 Dots, 30fps.
-+ [.oO° Demo °Oo.](https://captainfurax.github.io/p5js-DotBall/)
++ [.oO° Online Demo °Oo.](https://captainfurax.github.io/p5js-DotBall/)
 
-[center]![DotBall](https://github.com/CaptainFurax/p5js-DotBall/blob/main/UkrainianDotBall-1.jpg)[/center]
+![DotBall](https://github.com/CaptainFurax/p5js-DotBall/blob/main/UkrainianDotBall-1.jpg)
 
 Specs : 
 + Rendu 3D/Canvas WebGL[ p5xjs ] - Une simple sphere composée d'anneaux.
