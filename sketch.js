@@ -2,7 +2,7 @@
 p5.disableFriendlyErrors = true;
 const D2R = Math.PI / 180;
 function setup() {
-  createCanvas(600, 600, WEBGL).id("mainCanvas");
+  createCanvas(500, 500, WEBGL).id("mainCanvas");
  
   frameRate(30);
   angleMode(DEGREES);
