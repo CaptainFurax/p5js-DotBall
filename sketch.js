@@ -1,8 +1,7 @@
 
 function setup() {
   D2R = Math.PI / 180;
-  let cvs = createCanvas(600, 600, WEBGL);
-  cvs.id("mainCanvas");
+  let cvs = createCanvas(600, 600, WEBGL).id("mainCanvas");
  
   frameRate(30);
   angleMode(DEGREES);
