@@ -8,18 +8,21 @@
   
   <link rel="stylesheet" type="text/css" href="style.css">
   
-  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.min.js"></script>
   <script src="sketch.js"></script>
   <!--script src="libraries/p5.sound.min.js"></script-->
 </head>
 
   <body>
     <div id="desc">
+    <h2>/|\ Ukrainian DotBall 4 Freedom /|\</h2>
       <ul>
-        /|\ Ukrainian Freedom Flag DotBall /|\
+        Specs : 
         <ul>
-          <li>Une simple sphere composée d'anneaux.</li>
-          <li>La sphere est modélisée par un tableaux d'anneaux/de cercles faits de points, auxquels on applique un offset sur l'axe y.</li>  
+
+          <li>Rendu 3D/Canvas WebGL[ p5xjs ] - Une simple sphere composée d'anneaux.</li>
+          <li>Un anneau est un tableau de points[ vecteurs ] dessinant un cercle.</li>
+          <li>Décaler ces anneaux/cercles sur l'axe Y via un offset permet de 'modeliser' une Sphere.</li>  
         </ul>
         Cheat & Tricks :
         <ul>
@@ -30,7 +33,7 @@
           <li>A la modélisation, les anneaux sont tous sur le meme plan 'z'. Une rotation/un offest de 9° sur l'axe Y est faite sur chaque anneau dans la fonction 'Draw()' 
             pour dessiner une sphere...avec des anneaux !</li>
         </ul>
-        <p id="out"></p>
+        <span id="out"></span>
       </ul>
     </div>
   </body>

@@ -1,29 +1,28 @@
-@font-face { font-family: 'Press Start 2P'; src: url('PressStart2P.ttf'); }
-* { user-select: none;  box-sizing: border-box; }
-ul{line-height: 2.5em; color: #015BBB; margin: 0.5em;}
-li { line-height: 1.5em; color: #FED500; margin-bottom:0.5em; text-align: justify;}
+@font-face { font-family: 'AtariST8x16'; src: url('rsc/AtariST8x16SystemFont.ttf'); }
+* { user-select: none;  box-sizing: border-box;}
+ul{ text-align: justify; line-height: 2.5em; color: #015BBB; }
+li { line-height: 1.5em; color: #FED500;}
+h2 { color : darkgoldenrod; }
 html, body
 {
   background-color: #222;
-  margin: 0;
-  padding: 0;
-  font: 0.8em 'Press Start 2P';
+  margin: 0;padding: 0;
+  font: 1em 'AtariST8x16';
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   width:100vw;
   height: 100vh;
 }
 
-#mainCanvas
-{
-  border: 1px solid darkgoldenrod;
-}
+#mainCanvas { border: 1px solid darkgoldenrod; }
 
 #desc
 {
-  min-width:500px;
-  max-width:500px;
-  justify-content: center;
-  color: #FFFFFF;
+  width:auto;
+  max-width:800px;
+  text-align: center;
+  margin: 0.5em;
 }
+

@@ -38,6 +38,7 @@ function draw()
   }
   select("#out").html( "20 [ rings ]  x 36 [ dots ] = " + cpt + " Dots");
 } 
+
 //
 class UkrDotRing 
 {
@@ -61,7 +62,7 @@ class UkrDotRing
     for ( const vec of this.mx )
     {
       stroke( vec.c );
-      circle( vec.v.x, vec.v.y, 1);
+      circle( vec.v.x, vec.v.y, 1 );
     }
   }
   //
