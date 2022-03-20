@@ -3,8 +3,8 @@ p5.disableFriendlyErrors = true;
 const D2R = Math.PI / 180;
 let cvSiz;
 function setup() {
-  cvSiz = createVector(800,600);
-  createCanvas(cvSiz.x, cvSiz.y, WEBGL).id("mainCanvas").parent("container");
+  cvSiz = createVector(1024,768);
+  createCanvas(cvSiz.x, cvSiz.y, WEBGL).id("mainCanvas");
   frameRate(30);
   angleMode(DEGREES);
   rectMode(CENTER);
@@ -38,19 +38,17 @@ function draw()
       cpt += ring.mx.length;
     pop();
   }
-  //select( "#out").html(round(select("#container").style("width").split('px')[0]) + " - "+ round(select("#container").style("height").split('px')[0]) );
 } 
 //
 function windowResized(){
-  let contSiz = createVector( round(select("#container").style("width").split('px')[0]), round(select("#container").style("height").split('px')[0]) );
-  let ratio  = createVector( contSiz.x / cvSiz.x, contSiz.y / cvSiz.y );
-  if ( contSiz.x > contSiz.y && ratio.x > ratio.y )
+  let ratio  = createVector( windowWidth / cvSiz.x, windowHeight / cvSiz.y );
+  if ( windowWidth > windowHeight && ratio.x > ratio.y )
   {
     select("#mainCanvas").style("width", round(cvSiz.x * ratio.y) + "px");
-    select("#mainCanvas").style("height", contSiz.y + "px");
+    select("#mainCanvas").style("height", windowHeight + "px");
   } else
   {
-    select("#mainCanvas").style("width", contSiz.x  + "px");
+    select("#mainCanvas").style("width", windowWidth  + "px");
     select("#mainCanvas").style("height", round(cvSiz.y * ratio.x) + "px");
   }
 }
