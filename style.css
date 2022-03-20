@@ -1,6 +1,6 @@
 @font-face { font-family: 'AtariST8x16'; src: url('rsc/AtariST8x16SystemFont.ttf'); }
-* { user-select: none;  box-sizing: border-box;}
-ul{ text-align: justify; line-height: 2.5em; color: #015BBB; }
+* { user-select: none;  box-sizing: content-box;}
+ul{ padding-left:1em; text-align: justify; line-height: 2.5em; color: #015BBB; }
 li { line-height: 1.5em; color: #FED500;}
 h2 { color : darkgoldenrod; }
 html, body
@@ -12,7 +12,7 @@ html, body
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width:100vw;
+  width:100%;
   height: 100vh;
 }
 
@@ -20,8 +20,8 @@ html, body
 
 #desc
 {
-  width:auto;
-  max-width:600px;
+  width:40%;
+  min-width:600px;
   text-align: center;
   margin: 0.5em;
 }
