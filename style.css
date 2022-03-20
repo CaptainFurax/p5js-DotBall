@@ -2,27 +2,32 @@
 * { user-select: none;  box-sizing: content-box;}
 ul{ padding-left:1em; text-align: justify; line-height: 2.5em; color: #015BBB; }
 li { line-height: 1.5em; color: #FED500;}
-h2 { color : darkgoldenrod; }
+h3 { color : darkgoldenrod; }
 html, body
 {
   background-color: #222;
   margin: 0;padding: 0;
   font: 1em 'AtariST8x16';
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width:100%;
-  height: 100vh;
+  height: 100%;
 }
 
-#mainCanvas { border: 1px solid darkgoldenrod; }
-
-#desc
+#container
 {
-  width:40%;
-  min-width:600px;
-  text-align: center;
+  border-width: 1px 0 1px 0;
+  border-style:  solid;
+  border-color: darkgoldenrod;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  width:100%;
+  height: 66%;
   margin: 0.5em;
 }
 
