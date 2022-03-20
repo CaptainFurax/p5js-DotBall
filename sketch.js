@@ -1,9 +1,10 @@
 
 p5.disableFriendlyErrors = true;
 const D2R = Math.PI / 180;
+let cvSiz;
 function setup() {
-  createCanvas(500, 500, WEBGL).id("mainCanvas");
- 
+  cvSiz = createVector(800,600);
+  createCanvas(cvSiz.x, cvSiz.y, WEBGL).id("mainCanvas").parent("container");
   frameRate(30);
   angleMode(DEGREES);
   rectMode(CENTER);
@@ -13,6 +14,7 @@ function setup() {
     which will serve us to build a 'Ukrainian' DotBall Sphere
   */
   ring = new UkrDotRing();
+  windowResized();
 }
 
 function draw()
@@ -36,9 +38,22 @@ function draw()
       cpt += ring.mx.length;
     pop();
   }
-  select("#out").html( "20 [ rings ]  x 36 [ dots ] = " + cpt + " Dots");
+  //select( "#out").html(round(select("#container").style("width").split('px')[0]) + " - "+ round(select("#container").style("height").split('px')[0]) );
 } 
-
+//
+function windowResized(){
+  let contSiz = createVector( round(select("#container").style("width").split('px')[0]), round(select("#container").style("height").split('px')[0]) );
+  let ratio  = createVector( contSiz.x / cvSiz.x, contSiz.y / cvSiz.y );
+  if ( contSiz.x > contSiz.y && ratio.x > ratio.y )
+  {
+    select("#mainCanvas").style("width", round(cvSiz.x * ratio.y) + "px");
+    select("#mainCanvas").style("height", contSiz.y + "px");
+  } else
+  {
+    select("#mainCanvas").style("width", contSiz.x  + "px");
+    select("#mainCanvas").style("height", round(cvSiz.y * ratio.x) + "px");
+  }
+}
 //
 class UkrDotRing 
 {
@@ -51,7 +66,7 @@ class UkrDotRing
     */
     for (let i = 0; i < 360; i += 10) {
       let clr = ( i<=185 )? "#015BBB":"#FED500";
-      this.mx.push( {v:createVector( Math.cos(i * D2R) * width/2.5, Math.sin(i * D2R) * height/2.5 ), c:clr} );
+      this.mx.push( {v:createVector( Math.cos(i * D2R) * 250, Math.sin(i * D2R) * 250 ), c:clr} );
     }
   }
   
