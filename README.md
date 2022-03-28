@@ -1,7 +1,7 @@
 # p5js-DotBall
 p5js => Rotative DotBall...of Freedom !
 
-+ Dealing with a Dotted 'DotBall'.
++ Dealing with a 'subliminal colored' DotBall of Freedom.
 + 720 Dots, 30fps.
 + Responsive : Resize & Fit on 4/3 to optimize available space
 + [.oO° Online Demo °Oo.](https://captainfurax.github.io/p5js-DotBall/)
