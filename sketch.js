@@ -3,6 +3,7 @@ p5.disableFriendlyErrors = true;
 const D2R = Math.PI / 180;
 let cvSiz;
 function setup() {
+  pixelDensity(1);
   cvSiz = createVector(1024,768);
   createCanvas(cvSiz.x, cvSiz.y, WEBGL).id("mainCanvas");
   frameRate(30);
