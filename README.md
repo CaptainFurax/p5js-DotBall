@@ -5,7 +5,7 @@ p5js => A Rotative DotBall...of Freedom !
 ![DotBall](https://github.com/CaptainFurax/p5js-DotBall/blob/main/UkrainianDotBall-1.jpg)
 
 + [.oO° Online Demo °Oo.](https://captainfurax.github.io/p5js-DotBall/)
-+  Dealing with a 'subliminal colored' DotBall of Freedom inspired from 'Old School' Demo style.
++ Dealing with a 'subliminal colored' DotBall of Freedom inspired from 'Old School' Demo style.
 + 720 Dots, 30fps.
 + Responsive : Resize & Fit on 4/3 to optimize available space
 
